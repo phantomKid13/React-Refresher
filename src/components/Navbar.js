@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
       <div className="container-fluid">
@@ -29,9 +29,13 @@ export default function Navbar() {
             </li>
           </ul>
           <form className="d-flex" role="search">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <input className="form-control me-2" type="search" placeholder="Search" name="search" aria-label="Search" />
             <button className="btn btn-outline-success" type="submit">Search</button>
           </form>
+        <div className="form-check form-switch ms-5">
+          <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.toggle}/>
+            <label className="form-check-label small text-light" htmlFor="flexSwitchCheckDefault">Dark Mode</label>
+        </div>
         </div>
       </div>
     </nav>

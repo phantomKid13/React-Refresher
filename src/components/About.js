@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import '../css/About.css'
 
-export default function About() {
+export default function About(props) {
 
     let lightStyle = {
         color : "black",
@@ -11,12 +11,11 @@ export default function About() {
     
     let darkStyle = {
         color : "white",
-        backgroundColor : "black"
+        backgroundColor : "#212529"
     }
 
     let [myStyle, setMyStyle] = useState(lightStyle)
     let [btnText, setbtnText] = useState("Enable Dark Mode")
-
 
     const toggleStyle = (event) =>{
         let elem = event.target
