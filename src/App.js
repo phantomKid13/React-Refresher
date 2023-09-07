@@ -5,7 +5,7 @@ import About from "./components/About";
 import Alert from "./components/Alert";
 
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route
 } from "react-router-dom";
@@ -41,17 +41,16 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Navbar toggle={toggleMode}></Navbar>
         <Alert alert={alert} setAlert={setAlert}></Alert>
         <Routes>
           <Route exact path="/" element={<FormControl mode={mode} setAlertFn={setAlertFn}></FormControl>} />
-          <Route path="phantomkid13.github.io/React-Refresher/" element={<FormControl mode={mode} setAlertFn={setAlertFn}></FormControl>} />
           <Route exact path="/about" element={<About></About>} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
