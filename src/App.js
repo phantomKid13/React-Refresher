@@ -47,7 +47,7 @@ function App() {
         <Alert alert={alert} setAlert={setAlert}></Alert>
         <Routes>
           <Route exact path="/" element={<FormControl mode={mode} setAlertFn={setAlertFn}></FormControl>} />
-          <Route exact path="phantomkid13.github.io/React-Refresher/" element={<FormControl mode={mode} setAlertFn={setAlertFn}></FormControl>} />
+          <Route path="phantomkid13.github.io/React-Refresher/" element={<FormControl mode={mode} setAlertFn={setAlertFn}></FormControl>} />
           <Route exact path="/about" element={<About></About>} />
         </Routes>
       </div>
