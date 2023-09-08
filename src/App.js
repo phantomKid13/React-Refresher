@@ -5,7 +5,7 @@ import About from "./components/About";
 import Alert from "./components/Alert";
 
 import {
-  HashRouter,
+  BrowserRouter,
   Routes,
   Route
 } from "react-router-dom";
@@ -41,16 +41,16 @@ function App() {
   }
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="App">
         <Navbar toggle={toggleMode}></Navbar>
         <Alert alert={alert} setAlert={setAlert}></Alert>
         <Routes>
           <Route exact path="/" element={<FormControl mode={mode} setAlertFn={setAlertFn}></FormControl>} />
-          <Route exact path="/about" element={<About></About>} />
+          <Route exact path="/about" element={<About mode={mode}></About>} />
         </Routes>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
