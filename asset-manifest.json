@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/React-Refresher/static/css/main.fb84660c.css",
-    "main.js": "/React-Refresher/static/js/main.4091b832.js",
+    "main.js": "/React-Refresher/static/js/main.ea67360a.js",
     "static/js/496.14bf7e15.chunk.js": "/React-Refresher/static/js/496.14bf7e15.chunk.js",
     "index.html": "/React-Refresher/index.html",
     "static/media/down-vector.svg": "/React-Refresher/static/media/down-vector.b47834523ae18e50ac75.svg",
     "main.fb84660c.css.map": "/React-Refresher/static/css/main.fb84660c.css.map",
-    "main.4091b832.js.map": "/React-Refresher/static/js/main.4091b832.js.map",
+    "main.ea67360a.js.map": "/React-Refresher/static/js/main.ea67360a.js.map",
     "496.14bf7e15.chunk.js.map": "/React-Refresher/static/js/496.14bf7e15.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb84660c.css",
-    "static/js/main.4091b832.js"
+    "static/js/main.ea67360a.js"
   ]
 }
