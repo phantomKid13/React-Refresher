@@ -47,6 +47,7 @@ function App() {
         <Alert alert={alert} setAlert={setAlert}></Alert>
         <Routes>
           <Route exact path="/" element={<FormControl mode={mode} setAlertFn={setAlertFn}></FormControl>} />
+          <Route path="*/React-Refresher" element={<FormControl mode={mode} setAlertFn={setAlertFn}></FormControl>} /> 
           <Route exact path="/about" element={<About mode={mode}></About>} />
         </Routes>
       </div>
